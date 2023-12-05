@@ -8,5 +8,8 @@ namespace RestaurantReservationSystem.Model
 {
     internal class Table
     {
+        public int ID { get; set; }
+
+
     }
 }
