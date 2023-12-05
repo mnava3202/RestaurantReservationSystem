@@ -10,6 +10,8 @@ namespace RestaurantReservationSystem.Model
     {
         public int ID { get; set; }
 
+        public int SeatingCapacity { get; set; }
 
+        public string time { get; set; }
     }
 }
