@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantReservationSystem.Model
 {
-    internal class Reservation
+    public class Reservation
     {
         private DateTime date;
 
