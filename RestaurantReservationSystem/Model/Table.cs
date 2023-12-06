@@ -8,10 +8,21 @@ namespace RestaurantReservationSystem.Model
 {
     public class Table
     {
-        public int ID { get; set; }
+        public int ID;
 
-        public int SeatingCapacity { get; set; }
+        public int SeatingCapacity;
 
-        public string time { get; set; }
+        public string time;
+
+        public Table(int id, int capacity, string t)
+        {
+            ID = id;
+
+            SeatingCapacity = capacity;
+
+            time = t;
+        }
     }
+
+
 }
