@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantReservationSystem.Model
 {
-    internal class Table
+    public class Table
     {
         public int ID { get; set; }
 
