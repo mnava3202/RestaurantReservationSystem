@@ -8,9 +8,35 @@ namespace RestaurantReservationSystem.Model
 {
     public class Reservation
     {
-        private DateTime date;
+        private Customer c;
 
-        public DateTime GetDate() 
+        public void setCustomer(Customer c)
+        {
+            this.c = c;
+        }
+
+        public Customer getCustomer()
+        {
+            return c;
+        }
+
+        /////////////////////////////////////////////////
+        private Table t;
+
+        public void SetTable(Table t)
+        {
+            this.t = t;
+        }
+
+        public Table GetTable()
+        {
+            return t;
+        }
+
+        /////////////////////////////////////////////////
+        private string date;
+
+        public string GetDate() 
         {
             return date;
         }
@@ -23,7 +49,7 @@ namespace RestaurantReservationSystem.Model
             }
             else 
             {
-                date = DateTime.Parse(t);
+                date = t;
             }
         }
 
@@ -82,6 +108,17 @@ namespace RestaurantReservationSystem.Model
            
         }
 
+        /////////////////////////////////////////////////
+        public override string ToString()
+        {
+            string reservationOutput = "Table: " + t + ", " +
+                "Customer: " + c + ", " +
+                "Date: " + date + ", " +
+                "Number of Guests: " + NumOfGuests + ", " +
+                "Occasion: " + Occasion + ", " +
+                "Room Type: " + RoomType;
 
+            return reservationOutput;
+        }
     }
 }

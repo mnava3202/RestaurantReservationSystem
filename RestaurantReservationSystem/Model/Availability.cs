@@ -14,25 +14,25 @@ namespace RestaurantReservationSystem.Model
 			reservedTables = new List<Table>();
 		}
 
-		public void addFreeTable(Table t)
+		public void AddFreeTable(Table t)
 		{
 			freeTables.Add(t);
 		}
 
-		public List<Table> getFreeTables()
+		public List<Table> GetFreeTables()
 		{
 			return freeTables;
 		}
 
-		public void addReservedTables(Table t)
+		public void AddReservedTables(Table t)
 		{
 			reservedTables.Add(t);
 		}
 
-		public List<Table> getReservedTables()
+		public List<Table> GetReservedTables()
 		{
 			return reservedTables;
 		}
-	}
+    }
 }
 

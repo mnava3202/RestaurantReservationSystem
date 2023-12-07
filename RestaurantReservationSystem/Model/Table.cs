@@ -22,7 +22,14 @@ namespace RestaurantReservationSystem.Model
 
             time = t;
         }
+
+        public override string ToString()
+        {
+            string tableOutput = "Table ID: " + ID + ", " +
+                "Seating Capacity: " + SeatingCapacity + ", " +
+                "Available Time: " + time;
+
+            return tableOutput;
+        }
     }
-
-
 }

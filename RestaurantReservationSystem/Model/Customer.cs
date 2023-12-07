@@ -15,4 +15,13 @@ public class Customer
     public string Email { get; set; }
 
     public string PhoneNumber { get; set; }
+
+    public override string ToString()
+    {
+        string customerOutput = "Name: " + FirstName + " " + LastName + ", " +
+            "Email: " + Email + ", " +
+            "Phone Number: " + PhoneNumber;
+
+        return customerOutput;
+    }
 }
