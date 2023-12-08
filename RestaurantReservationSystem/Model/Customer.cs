@@ -15,4 +15,13 @@ public class Customer
     public string Email { get; set; } // creates attribute of email, so that customers can input their email when making a resrvation and allow the data to be saved
 
     public string PhoneNumber { get; set; } // creates attribute of phone number, so that customers can input their phone number when making a resrvation and allow the data to be saved
+
+    public override string ToString()
+    {
+        string customerOutput = "Name: " + FirstName + " " + LastName + ", " +
+            "Email: " + Email + ", " +
+            "Phone Number: " + PhoneNumber;
+
+        return customerOutput;
+    }
 }
