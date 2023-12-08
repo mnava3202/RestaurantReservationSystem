@@ -80,7 +80,7 @@ namespace RestaurantReservationSystem.Model
         {
             if (o != "Business" && o != "Birthday" && o != "Anniversary" && o != "Regular")
             {
-                Console.WriteLine("Invalid occassion. Please type 'Business', 'Birthday', 'Anniversaty' or 'Regular'.");
+                Console.WriteLine("Invalid occassion. Please type 'Business', 'Birthday', 'Anniversary' or 'Regular'.");
             }
             else
             { 
@@ -111,11 +111,11 @@ namespace RestaurantReservationSystem.Model
         /////////////////////////////////////////////////
         public override string ToString()
         {
-            string reservationOutput = "Table: " + t + ", " +
-                "Customer: " + c + ", " +
-                "Date: " + date + ", " +
-                "Number of Guests: " + NumOfGuests + ", " +
-                "Occasion: " + Occasion + ", " +
+            string reservationOutput = "Table: " + t + ",\n" +
+                "Customer: " + c + ",\n" +
+                "Date: " + date + ",\n" +
+                "Number of Guests: " + NumOfGuests + ",\n" +
+                "Occasion: " + Occasion + ",\n" +
                 "Room Type: " + RoomType;
 
             return reservationOutput;
