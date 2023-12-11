@@ -16,6 +16,7 @@ public class Customer
 
     public string PhoneNumber { get; set; } // creates attribute of phone number, so that customers can input their phone number when making a resrvation and allow the data to be saved
 
+    // overrides the ToString() method so that an object from the class Customer can have a formatted output
     public override string ToString()
     {
         string customerOutput = "Name: " + FirstName + " " + LastName + ", " +

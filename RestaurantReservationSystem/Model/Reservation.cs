@@ -109,6 +109,8 @@ namespace RestaurantReservationSystem.Model
         } //Uses an if else statement that restricts the user's input; if the input is valid, RoomType will have the value of r
 
         /////////////////////////////////////////////////
+
+        // overrides the ToString() method so that an object from the class Reservation can have a formatted output
         public override string ToString()
         {
             string reservationOutput = "Table: " + t + ",\n" +

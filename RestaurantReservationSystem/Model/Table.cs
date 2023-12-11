@@ -23,6 +23,7 @@ namespace RestaurantReservationSystem.Model
             time = t; // Assign the value of t to the time variable of the current instance (object).
         }
 
+        // overrides the ToString() method so that an object from the class Table can have a formatted output
         public override string ToString()
         {
             string tableOutput = "Table ID: " + ID + ", " +
